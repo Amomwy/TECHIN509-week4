@@ -1,3 +1,7 @@
+#this is the change that yuqi made!
+#yuqi checked the code and found there was no bug!
+print('amo is cute!')
+
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -16,7 +20,7 @@ board = [
     "....#............###..",
     "....##############....",
 ]
-
+ 
 
 def flood_fill(input_board: List[str], old: str, new: str, x: int, y: int) -> List[str]:
     """Returns board with old values replaced with new values
