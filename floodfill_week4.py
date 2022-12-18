@@ -1,3 +1,7 @@
+#this is the change that yuqi made!
+#yuqi checked the code and found there was no bug!
+print('amo is cute!')
+
 #!/usr/bin/env python
 # coding: utf-8
 
@@ -16,7 +20,17 @@ board = [
     "....#............###..",
     "....##############....",
 ]
-
+ 
+board2 = [
+    ".........##...........",
+    "......###..#####......",
+    "......#.....####......",
+    "......#........#......",
+    "......#........#####..",
+    "....###............#..",
+    "....#......#########..",
+    "....##############....",  
+] 
 
 def flood_fill(input_board: List[str], old: str, new: str, x: int, y: int) -> List[str]:
     """Returns board with old values replaced with new values
@@ -68,6 +82,10 @@ modified_board = flood_fill(input_board=board, old=".", new="~", x=5, y=12)
 for a in modified_board:
     print(a)
 
+modified_board2 = flood_fill(input_board=board2, old=".", new="~", x=5, y=12)
+
+for b in modified_board2:
+    print(b)
 
 # In[ ]:
 
